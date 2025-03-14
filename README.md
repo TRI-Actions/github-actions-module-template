@@ -7,26 +7,18 @@
     - name: Run Composite Module
       uses: <ORG>/<REPO_NAME>@main
 
-## Contents of the module
 
 ### .github/workflows/main.yaml
-  This file sets the workflow for using pre-commit and will test the workflow. Feel free to move the pre-commit checks into 
+  This file sets the workflow for using pre-commit and will test the workflow.
 
   This file has to change two areas: 
   `run-name:`
 
   `runs-on: codebuild-<RUNNER_NAME>`
 
-  This file will test the workflow. It will test it by calling the workflow on the test branch. Ideally when using this file, you would want to push changes to the test branch and then test the pipeline by creating a pull request.
-
-  This file has to change three areas: 
-  `run-name:`
-
-  `runs-on: codebuild-<RUNNER_NAME>`
-
-    steps:
-      - name: Run Composite Module
-        uses: <ORG>/<REPO_NAME>@test
+  steps:
+    - name: Run Composite Module
+      uses: <ORG>/<REPO_NAME>@test
 
 
 
