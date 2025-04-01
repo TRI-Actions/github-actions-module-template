@@ -15,7 +15,6 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"hashicorp.terraform",
-		"dontshavetheyak.jenkins-extension-pack",
 		"eamodio.gitlens"
 	],
 	// Set the build args
